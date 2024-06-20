@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://cu30wjbacsupj"]
+[gd_scene load_steps=5 format=3 uid="uid://cu30wjbacsupj"]
 
+[ext_resource type="Script" path="res://Main.gd" id="1_7omdp"]
 [ext_resource type="Script" path="res://Scripts/btnGrid1.gd" id="1_nkv73"]
 [ext_resource type="Script" path="res://Scripts/ListMouvement.gd" id="1_rq6wu"]
 [ext_resource type="Script" path="res://Scripts/Monster1.gd" id="3_coa26"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_7omdp")
 
 [node name="Grid" type="GridContainer" parent="."]
 custom_minimum_size = Vector2(1150, 650)
@@ -97,3 +99,27 @@ offset_right = 100.0
 offset_bottom = -258.0
 text = "no"
 script = ExtResource("3_coa26")
+
+[node name="Placeholder" type="Control" parent="Control/Panel"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -2.0
+offset_top = -653.0
+offset_right = 38.0
+offset_bottom = -613.0
+
+[node name="Placeholder2" type="Control" parent="Control/Panel"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 418.0
+offset_top = -653.0
+offset_right = 458.0
+offset_bottom = -613.0
+
+[node name="Placeholder3" type="Control" parent="Control/Panel"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 832.0
+offset_top = -651.0
+offset_right = 872.0
+offset_bottom = -611.0
