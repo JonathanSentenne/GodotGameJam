@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://v2v1cey5k37n"]
+
+[ext_resource type="Texture2D" uid="uid://bmmlojki5e722" path="res://Assets/Bg/inventory-slot.png" id="1_hs5sp"]
+
+[node name="Panel" type="Panel"]
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hs5sp")
+centered = false

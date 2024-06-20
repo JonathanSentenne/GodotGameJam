@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjfpk4mltpugk"]
+
+[ext_resource type="Script" path="res://Grid/carreGrid.gd" id="1_7ilr0"]
+
+[node name="carreGrid" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7ilr0")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.809923, 0.64835, 0.430836, 0.713726)
