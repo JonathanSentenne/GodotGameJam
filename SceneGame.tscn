@@ -1,9 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://cu30wjbacsupj"]
+[gd_scene load_steps=4 format=3 uid="uid://cu30wjbacsupj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_7omdp"]
-[ext_resource type="Script" path="res://Scripts/btnGrid1.gd" id="1_nkv73"]
 [ext_resource type="Script" path="res://Scripts/ListMouvement.gd" id="1_rq6wu"]
-[ext_resource type="Script" path="res://Scripts/Monster1.gd" id="3_coa26"]
+
+[sub_resource type="GDScript" id="GDScript_3b1yg"]
+script/source = "extends Button
+
+signal value_changed(new_value)
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	connect(\"pressed\",Callable(self,\"_on_Btn_pressed\"))
+
+func _on_Btn_pressed():
+	var value = self.text
+	emit_signal(\"value_changed\", value)
+
+"
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_7omdp")
@@ -18,26 +30,25 @@ theme_override_constants/h_separation = 15
 theme_override_constants/v_separation = 15
 columns = 4
 
-[node name="Button" type="Button" parent="Grid"]
-unique_name_in_owner = true
+[node name="Button00" type="Button" parent="Grid"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 text = "hellow"
-script = ExtResource("1_nkv73")
+script = SubResource("GDScript_3b1yg")
 
-[node name="Button2" type="Button" parent="Grid"]
+[node name="Button01" type="Button" parent="Grid"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
-[node name="Button3" type="Button" parent="Grid"]
+[node name="Button02" type="Button" parent="Grid"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
-[node name="Button4" type="Button" parent="Grid"]
+[node name="Button03" type="Button" parent="Grid"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
-[node name="Button5" type="Button" parent="Grid"]
+[node name="Button04" type="Button" parent="Grid"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
@@ -92,34 +103,26 @@ offset_top = 653.0
 offset_right = 1157.0
 offset_bottom = 1317.0
 
-[node name="Button" type="Button" parent="Control/Panel"]
-layout_mode = 0
-offset_top = -358.0
-offset_right = 100.0
-offset_bottom = -258.0
-text = "no"
-script = ExtResource("3_coa26")
-
 [node name="Placeholder" type="Control" parent="Control/Panel"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -2.0
-offset_top = -653.0
-offset_right = 38.0
-offset_bottom = -613.0
+offset_left = 204.0
+offset_top = 301.0
+offset_right = 244.0
+offset_bottom = 341.0
 
 [node name="Placeholder2" type="Control" parent="Control/Panel"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 418.0
-offset_top = -653.0
-offset_right = 458.0
-offset_bottom = -613.0
+offset_left = 554.0
+offset_top = 294.0
+offset_right = 594.0
+offset_bottom = 334.0
 
 [node name="Placeholder3" type="Control" parent="Control/Panel"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 832.0
-offset_top = -651.0
-offset_right = 872.0
-offset_bottom = -611.0
+offset_left = 908.0
+offset_top = 302.0
+offset_right = 948.0
+offset_bottom = 342.0

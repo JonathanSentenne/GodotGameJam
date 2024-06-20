@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://d0idrx04e8xyr"]
+[gd_scene load_steps=2 format=3 uid="uid://d0idrx04e8xyr"]
+
+[ext_resource type="Script" path="res://YetiV1.gd" id="1_y7dsj"]
 
 [node name="InstantiateMonster" type="Button"]
 text = "hello"
+script = ExtResource("1_y7dsj")
