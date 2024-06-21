@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dqqgw8ywb1agd"]
+
+[node name="InstantiateMonster" type="Button"]
+text = "hello5
+"

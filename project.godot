@@ -10,6 +10,7 @@ config_version=5
 
 [application]
 
-config/name="GoDotFirstGame"
+config/name="Godot Game Jam"
+run/main_scene="res://SceneGame.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
