@@ -1,12 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://cu30wjbacsupj"]
+[gd_scene load_steps=6 format=3 uid="uid://cu30wjbacsupj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_7omdp"]
 [ext_resource type="Script" path="res://Scripts/btnGrid1.gd" id="1_nkv73"]
 [ext_resource type="Script" path="res://Scripts/ListMouvement.gd" id="1_rq6wu"]
+[ext_resource type="Script" path="res://GameManager.gd" id="2_ve8v2"]
 [ext_resource type="Script" path="res://Scripts/Monster1.gd" id="3_coa26"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_7omdp")
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("2_ve8v2")
 
 [node name="Grid" type="GridContainer" parent="."]
 custom_minimum_size = Vector2(1150, 650)
