@@ -1,0 +1,98 @@
+[gd_scene load_steps=5 format=3 uid="uid://cu30wjbacsupj"]
+
+[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_tc3uy"]
+[ext_resource type="Script" path="res://Scripts/ListMouvement.gd" id="2_n6acb"]
+[ext_resource type="Script" path="res://Scripts/Teacher.gd" id="3_opeeg"]
+
+[sub_resource type="GDScript" id="GDScript_3b1yg"]
+script/source = "extends Button
+
+func _on_Button1_value_changed(new_value):
+	self.text = new_value
+# Called when the node enters the scene tree for the first time.
+
+
+"
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_tc3uy")
+
+[node name="Grid" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(1150, 650)
+offset_left = 345.0
+offset_top = 171.0
+offset_right = 1495.0
+offset_bottom = 821.0
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 4
+
+[node name="Button00" type="Button" parent="Grid"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "hellow"
+script = SubResource("GDScript_3b1yg")
+
+[node name="Button01" type="Button" parent="Grid"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button02" type="Button" parent="Grid"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button03" type="Button" parent="Grid"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button04" type="Button" parent="Grid"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_n6acb")
+
+[node name="Button" type="Button" parent="Control"]
+top_level = true
+z_as_relative = false
+layout_mode = 0
+offset_left = 537.0
+offset_top = 607.0
+offset_right = 577.0
+offset_bottom = 647.0
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 653.0
+offset_right = 1157.0
+offset_bottom = 1317.0
+script = ExtResource("3_opeeg")
+
+[node name="Placeholder" type="Control" parent="Control/Panel"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 204.0
+offset_top = 301.0
+offset_right = 244.0
+offset_bottom = 341.0
+
+[node name="Placeholder2" type="Control" parent="Control/Panel"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 554.0
+offset_top = 294.0
+offset_right = 594.0
+offset_bottom = 334.0
+
+[node name="Placeholder3" type="Control" parent="Control/Panel"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 908.0
+offset_top = 302.0
+offset_right = 948.0
+offset_bottom = 342.0

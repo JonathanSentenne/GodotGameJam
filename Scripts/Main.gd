@@ -1,16 +1,15 @@
 extends Node2D
 
 var nodes = [
-	preload("res://InstantiateMonster.tscn"),
-	preload("res://InstantiateMonster2.tscn"),
-	preload("res://InstantiateMonster3.tscn"),
-	preload("res://InstantiateMonster4.tscn"),
-	preload("res://InstantiateMonster5.tscn"),
-	preload("res://InstantiateMonster6.tscn"),
-	preload("res://InstantiateMonster7.tscn"),
-	preload("res://InstantiateMonster8.tscn"),
-	preload("res://InstantiateMonster9.tscn"),
-	preload("res://InstantiateMonster10.tscn")
+	preload("res://Scenes/InstantiateMonster.tscn"),
+	preload("res://Scenes/InstantiateMonster2.tscn"),
+	preload("res://Scenes/InstantiateMonster3.tscn"),
+	preload("res://Scenes/InstantiateMonster4.tscn"),
+	preload("res://Scenes/InstantiateMonster5.tscn"),
+	preload("res://Scenes/InstantiateMonster6.tscn"),
+	preload("res://Scenes/InstantiateMonster7.tscn"),
+	preload("res://Scenes/InstantiateMonster8.tscn"),
+	preload("res://Scenes/InstantiateMonster9.tscn")
 ]
 
 var placeholders = []
@@ -22,7 +21,6 @@ func _ready():
 	placeholders.append(get_node("Control/Panel/Placeholder2"))
 	placeholders.append(get_node("Control/Panel/Placeholder3"))
 
-	
 	inst()
 	pass # Replace with function body.
 

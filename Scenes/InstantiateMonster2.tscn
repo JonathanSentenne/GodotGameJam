@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://1awx3c1gokmp"]
+
+[ext_resource type="Script" path="res://Scripts/Monsters.gd" id="1_3ksbe"]
+
+[node name="InstantiateMonster" type="Button"]
+text = "hello2"
+script = ExtResource("1_3ksbe")
+monsterName = "Phénix"

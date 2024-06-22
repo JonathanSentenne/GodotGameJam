@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq6v2nkksk5cr"]
+
+[ext_resource type="Script" path="res://Scripts/Monsters.gd" id="1_simn0"]
+
+[node name="InstantiateMonster" type="Button"]
+text = "hello3"
+script = ExtResource("1_simn0")
+monsterName = "Wandigo"
